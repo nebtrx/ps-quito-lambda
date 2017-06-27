@@ -3,7 +3,7 @@
 1. Run `npm install -g markdown-to-slides`
 
 2. Open file `/usr/local/lib/node_modules/markdown-to-slides/template/template.html`
-and replace line with the following one:
+and replace line 16 with the following one:
 ```
 var slideshow = remark.create({ ratio: "16:9" });
 ```
