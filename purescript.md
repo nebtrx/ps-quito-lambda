@@ -349,7 +349,7 @@ main :: Eff.Eff (console :: Console.CONSOLE) Unit
 
 ### Tipos de Efectos
 
-| Nativos                      | Navegador | No nativos                            |
+| Nativos                      | No nativos| Navegador                            |
 | :---                         | :---:     | --:                                   |
 | Console IO                   | Maybe     |  Manipulación del DOM                 | |                              |           |                                       |
 | Generación de números random | Either    | XMLHttpRequest / AJAX requests        |
@@ -450,17 +450,43 @@ module URI where
 
 foreign import encodeURIComponent :: String -> String
 
+```
 
+```haskell
 encodeURIComponent "hello world"
 -- "hello%20world"
 ```
 
+---
+
+# FFI: JavaScript --> PureScript
+
 No tan simple
+
+```javascript
+// var timeoutID = scope.setTimeout(function[, delay, param1, param2, ...]);
+// var timeoutID = scope.setTimeout(function[, delay]);
+// var timeoutID = scope.setTimeout(code[, delay]);
+
+```
 
 ```haskell
 foreign import data TimeoutID :: *
 foreign import data TIMER :: !
 
-foreign import setTimeout :: forall e. Eff e Unit -> Number -> Eff (timer :: TIMER) TimeoutID
-foreign import clearTimeout :: TimeoutID -> Eff (timer :: TIMER) Unit
+foreign import setTimeout :: forall e. Eff e Unit 
+                          -> Number 
+                          -> Eff (timer :: TIMER) TimeoutID
+
 ```
+
+---
+
+
+
+
+---
+
+<h1 style="text-align: center;margin-top:250px" markdown="1">Q&A</h1>
+
+---
