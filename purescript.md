@@ -560,34 +560,6 @@ $ pulp init
 
 - Documentación del proyecto: https://github.com/purescript/documentation
 
-- [Purescript](#purescript)
-- [Origen: 2013](#origen-2013)
-- [Antecedentes](#antecedentes)
-- [Ventajas con respecto a Haskell](#ventajas-con-respecto-a-haskell)
-- [Funcionalidades](#funcionalidades)
-- [Hello World](#hello-world)
-- [Literales](#literales)
-- [Funciones](#funciones)
-- [Records](#records)
-- [Entensible Records](#entensible-records)
-- [Records](#records)
-- [Definiendo tipos de datos](#definiendo-tipos-de-datos)
-- [Pattern Matching](#pattern-matching)
-- [Pattern Matching](#pattern-matching)
-- [Estructura típica de un módulo](#estructura-t-pica-de-un-m-dulo)
-- [Efectos](#efectos)
-        - [Tipos de Efectos](#tipos-de-efectos)
-- [Efectos extensibles](#efectos-extensibles)
-- [Componiendo Efectos](#componiendo-efectos)
-- [Purescript tiene type classes](#purescript-tiene-type-classes)
-- [FFI: PureScript --> JavaScript](#ffi-purescript-javascript)
-- [FFI: JavaScript --> PureScript](#ffi-javascript-purescript)
-- [FFI: JavaScript --> PureScript](#ffi-javascript-purescript)
-- [Diferencias notables con Haskell](#diferencias-notables-con-haskell)
-- [¿Quién lo usa?](#qui-n-lo-usa)
-- [Herramientas](#herramientas)
-- [Material de consulta](#material-de-consulta)
-
 - Documentación de Pulp: https://github.com/purescript-contrib/pulp
 
 - Diferencias con Haskell: https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md
