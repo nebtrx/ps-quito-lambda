@@ -262,6 +262,14 @@ johnJr = john { birthYear = 2010 }
 
 ```
 
+```haskell
+johnName :: { name :: String, birthYear :: Int } -> String
+johnName = john.name
+-- or
+johnName = _.name $ john
+
+```
+
 ---
 
 # Entensible Records
