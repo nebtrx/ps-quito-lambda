@@ -20,7 +20,7 @@
 
 ---
 
-# Origen
+# Origen: 2013
 
 Pequeño lenguaje con el objetivo de crear DSL usando un  sistema de tipos con funcionalidades como tipos de datos algebraicos y records extensibles no disponible en otros lenguajes AltJS
 
@@ -78,6 +78,7 @@ Pequeño lenguaje con el objetivo de crear DSL usando un  sistema de tipos con f
 |                              |                               |
 | Rank-N types                 | Código generado entendible    |
 
+Nota: No soporta extensiones del lenguaje como Haskell
 
 ---
 
@@ -479,6 +480,26 @@ foreign import setTimeout :: forall e. Eff e Unit
                           -> Eff (timer :: TIMER) TimeoutID
 
 ```
+---
+
+# Diferencias notables con Haskell
+
+- PureScript es estricto y no perezoso como Haskell
+
+- Prelude no está implícito. Tienes que importarlo
+
+- La importación de módulos requiere la palabra clave `class` para type classes y no existe la palabra clave `qualified`
+
+- `forall` explícito, `(.)` es `(<<<)` y  `(++)` es `(<>)`
+
+- `IO` vs `Eff`. También existe `Aff`
+
+- `()` es `Unit`,  `(a, b)` es `Tuple a b` y `[a]` es `Array a`
+
+- Las instancias de type classes requieren un identificador o nombre
+
+- No existe `return`, en su lugar se utiliza `pure`
+
 
 ---
 
@@ -486,12 +507,52 @@ foreign import setTimeout :: forall e. Eff e Unit
 
 En crecimiento. Usado por:
 * Slam Data: https://slamdata.com/ - NoSQL analytics
+
 * Xamarin: https://www.xamarin.com/ - Internal services based on Node
+
 * DICOM Grid, bought by Ambra Health: https://ambrahealth.com/ - Modules for the main app where TypeScript couldn't reach
+
 * CollegeVine: https://www.collegevine.com/ - Main WebApp
+
+---
+
+# Herramientas
+
+- npm
+
+- bower
+
+- pulp
+
+```bash
+$ npm install -g purescript
+
+$ npm install -g pulp bower
+
+$ pulp init
+
+```
+
+---
+
+<h1 style="text-align: center;margin-top:250px" markdown="1">Demo</h1>
+
+---
+
+# Material de consulta
+
+- Sitio Oficial: http://www.purescript.org/
+
+- Documentación del proyecto: https://github.com/purescript/documentation
+
+- Purescript by Example por Phil Freeman: https://leanpub.com/purescript
+
+- Documentación de Pulp: https://github.com/purescript-contrib/pulp
+
+- Diferencias con Haskell: https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md
+
 
 ---
 
 <h1 style="text-align: center;margin-top:250px" markdown="1">Q&A</h1>
 
----
