@@ -203,7 +203,7 @@ johnName = _.name $ john
 
 ---
 
-# Entensible Records
+# Records extendibles
 
 ```haskell
 fullName  :: { first :: String, last :: String } -> String
